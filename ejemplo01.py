@@ -1,5 +1,5 @@
 # coding=utf-8
-__Author__="José Gaspar Sánchez García"
+__Author__="Yeray de la Cruz García Bravo"
 
 import webbrowser, urllib.request, urllib.error, urllib.parse
 
@@ -8,7 +8,7 @@ def main():
     print("MANEJO DE CADENAS")
     print(30*"=")
     nombre=input("Introduzca su nombre: ")
-    apellidos=input("Introduzca sus apellidos: ");
+    apellidos=input("Introduzca sus apellidos: ")
     print("¡Hola {0} {1}!".format(nombre,apellidos))
     print("MAYUSCULAS: {0}".format(nombre.upper()))
     print("nombre en minúsculas: "+nombre.lower())
@@ -20,4 +20,4 @@ def main():
     webbrowser.open_new_tab(url)
     
 if __name__== "__main__" :
-   main()
+    main()

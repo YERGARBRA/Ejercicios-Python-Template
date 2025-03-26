@@ -1,5 +1,5 @@
 # coding=utf-8
-__Author__="José Gaspar Sánchez García"
+__Author__="Yeray de la Cruz García Bravo"
 from bs4 import BeautifulSoup
 import requests, webbrowser
 
@@ -7,7 +7,7 @@ import requests, webbrowser
 def main():
     print("Web Scrapping con Beatiful Soap")
     print(30*"=")
-    url="https://www.elmundo.es/quijote/capitulo.html?cual=1";
+    url="https://www.elmundo.es/quijote/capitulo.html?cual=1"
     print("Abriendo página web {0} en una nueva pestaña.".format(url))
     webbrowser.open_new_tab(url)
     print("WEB SCRAPPING")
@@ -15,7 +15,7 @@ def main():
 
     
     resultado=requests.get(url)
-    html=resultado.text;
+    html=resultado.text
 
     sopa=BeautifulSoup(html)
     print(sopa.prettify())

@@ -1,4 +1,3 @@
-# Autor:
+_Author__="Yeray de la Cruz García Bravo"
 
-# Imprime Hola mundo por pantalla
-# Escrube en pantalla Hola muddo
+print("Hello World")

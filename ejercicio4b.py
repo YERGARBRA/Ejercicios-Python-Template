@@ -1,5 +1,5 @@
 # coding=utf-8
-__Author__="José Gaspar Sánchez García"
+__Author__="Yeray de la Cruz García Bravo"
 
 """Escriba un programa que simule el juego **Piedra, papel, tijera** para dos jugadores. Las reglas del juego son las siguientes: 
     Simultáneamente, los dos jugadores muestran una mano en tres posibles posiciones:
@@ -47,8 +47,8 @@ def main():
         j1 = random.choice(["piedra", "papel", "tijera"])
         j2 = random.choice(["piedra", "papel", "tijera"])
         
-        # print(nombre1+" ha sacado "+j1+".")
-        # print(nombre2+" ha sacado "+j2+".")
+        print("{} ha sacado {}.".format(nombre1, j1))
+        print("{} ha sacado {}.".format(nombre2, j2))
         # Implemente los comentarios anteriores empleando print("".format())
        
         
@@ -74,9 +74,9 @@ def main():
     if ganadas1 == ganadas2 :
         print("HAN EMPATADO")
     elif ganadas1 > ganadas2 :
-        print("GANA ",nombre1," (",ganadas1,")")
+        print("GANA {} ({})".format(nombre1, ganadas1))
     else :
-        print("GANA ",nombre2," (",ganadas2,")")
+        print("GANA {} ({})".format(nombre2, ganadas2))
 
 
 if __name__== "__main__" :

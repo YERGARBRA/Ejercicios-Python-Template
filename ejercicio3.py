@@ -1,25 +1,25 @@
 # coding=utf-8
-__Author__="José Gaspar Sánchez García"
+__Author__="Yeray de la Cruz García Bravo"
 
-"""Pide una nota (número). Muestra la calificación según la nota:
-    0-3: Muy deficiente.
-    3-5: Insuficiente.
-    5-6: Suficiente.
-    6-7: Bien.
-    7-9: Notable.
-    9-10: Sobresaliente
-- Utilice la estructura de control if-elif-else.
-- Impltemente una función obtenerCalificacion(nota)."""
-
-# Implemente función obtenerCalificacion
-def obtenerCalificaion(nota) :
-    calificacion="Incorrecta"
-   # Implemente aquí ... Si (condición) entonces ... sino ... si (condición) entonces ... sino ...
-    return calificacion
+def obtenerCalificacion(nota):
+    if (nota > 10 or nota < 0):
+        return "Incorrecta"
+    elif (nota > 8):
+        return "Sobresaliente"
+    elif (nota > 6):
+        return "Notable"
+    elif (nota > 5):
+        return "Bien"
+    elif (nota > 4):
+        return "Suficiente"
+    elif (nota > 3):
+        return "Insuficiente"
+    else:
+        return "Muy deficiente"
 
 # Programa principal
 def main():
     n=int(input("Introduzca la nota: "));
-    print('Calificación: '+obtenerCalificaion(n));
+    print('Calificación: '+ obtenerCalificacion(n));
 if __name__== "__main__" :
    main()

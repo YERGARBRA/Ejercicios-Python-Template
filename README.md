@@ -1,7 +1,7 @@
 ![Logotipos ME-GVA CEICE-FP CV-FSE](/imagenes/Logotipos.png)
 # Puesta en Producción Segura: Fundamentos de programación.
 ## Ejercicios de Programación con Python
-### Profesor José Gaspar Sánchez García.
+### Yeray de la Cruz García Bravo.
 Alumno:
 
 #### Elementos básicos:
