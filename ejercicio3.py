@@ -12,7 +12,7 @@ def obtenerCalificacion(nota):
         return "Bien"
     elif (nota > 4):
         return "Suficiente"
-    elif (nota > 3):
+    elif (nota >= 3):
         return "Insuficiente"
     else:
         return "Muy deficiente"
